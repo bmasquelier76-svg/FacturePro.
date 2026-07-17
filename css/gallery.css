@@ -1,0 +1,268 @@
+/* ==========================================
+   GALERIE FACTUREPRO
+========================================== */
+
+.software{
+    padding:40px 0 100px;
+    background:transparent;
+}
+
+
+.software .container{
+    max-width:1400px;
+    margin:auto;
+}
+
+/* ---------- TITRE ---------- */
+
+.software .section-header{
+
+    text-align:left;
+    max-width:1000px;
+    margin:-20px 0 30px;
+
+}
+.software .section-header h2{
+
+    font-size:42px;
+
+    line-height:1.2;
+
+    margin-bottom:15px;
+
+}
+
+.software .section-header span{
+    display:inline-block;
+    color:#1677FF;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:12px;
+}
+
+.software .section-header h2{
+    font-size:38px;
+    margin-bottom:18px;
+}
+
+.software .section-header p{
+    font-size:18px;
+    color:#6B7280;
+    line-height:1.8;
+}
+
+/* ==========================================
+   MINIATURES
+========================================== */
+
+.software-thumbnails{
+
+    display:grid;
+
+    grid-template-columns:repeat(8,150px);
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-bottom:45px;
+
+}
+
+.thumb{
+
+    width:150px;
+
+    height:84px;
+
+    object-fit:cover;
+
+    object-position:top;
+
+    border-radius:12px;
+
+    border:3px solid transparent;
+
+    cursor:pointer;
+
+    transition:.30s;
+
+    box-shadow:0 10px 22px rgba(0,0,0,.10);
+
+}
+
+.thumb:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.thumb.active{
+
+    border-color:#1677FF;
+
+}
+
+/* ==========================================
+   CONTENU
+========================================== */
+
+.software-content{
+
+    display:grid;
+
+    grid-template-columns:520px 1fr;
+
+    gap:40px;
+
+    align-items:center;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    margin-top:5px;
+
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.software-preview{
+
+    text-align:center;
+
+}
+
+.software-preview img{
+
+    width:100%;
+
+    max-width:520px;
+
+    border-radius:20px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.software-description{
+
+    text-align:left;
+
+}
+
+.software-description h3{
+
+    font-size:34px;
+
+    margin-bottom:18px;
+
+    text-align:center;
+
+}
+
+.software-description p{
+
+    font-size:18px;
+
+    color:#6B7280;
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+
+}
+
+#preview-list{
+
+    list-style:none;
+
+    padding:0;
+
+    display:grid;
+
+    gap:8px;
+
+}
+
+#preview-list li{
+
+    background:white;
+
+    padding:18px 20px;
+
+    border-radius:14px;
+
+    box-shadow:0 10px 22px rgba(0,0,0,.05);
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1000px){
+
+    .software-content{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+    }
+
+    .software-description{
+
+        text-align:center;
+
+    }
+
+    .software-thumbnails{
+
+        grid-template-columns:repeat(2,180px);
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .software-thumbnails{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .thumb{
+
+        width:100%;
+
+        height:auto;
+
+    }
+
+}
+.software{
+    padding:50px 0;
+background:transparent;
+
+    scroll-margin-top:80px;
+}
+.software-title{
+
+    text-align:center;
+
+    font-size:34px;
+
+    margin:-20 0 5px;
+
+}
